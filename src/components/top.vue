@@ -89,7 +89,7 @@ export default {
         callback(new Error("地址不能为空"));
       } else {
 
-        let arr = ["127.0.0.1:8088"];
+        let arr = ["localhost:8088"];
         if (
           (this.listAdditionals &&
             this.listAdditionals.filter((v) => v.url == value).length > 0) ||
@@ -158,7 +158,7 @@ export default {
           value: "超级链",
           id: "1",
           Content: "超级链",
-          url: "http://127.0.0.1:8088",
+          url: "http://localhost:8088",
         }
       ],
 
@@ -313,7 +313,7 @@ export default {
   mounted() {
     this.value_url_data = JSON.parse(
       window.localStorage.getItem("value_url")
-    ) || [{ name: "超级链", url: "http://127.0.0.1:8088" }];
+    ) || [{ name: "超级链", url: "http://localhost:8088" }];
     this.valuetit = this.value_url_data[0].name;
 
     //获取vuex里面的value值
