@@ -1,17 +1,5 @@
 #!/usr/bin/env -S bash
 
-if ! [[ -f xuperindexer-linux-amd64.zip ]]; then
-  wget https://github.com/xuperchain/xuperscan/releases/download/v0.1.1/xuperindexer-linux-amd64.zip
-fi
-
-if ! [[ -d xuperindexer ]]; then
-  unzip xuperindexer-linux-amd64.zip -d .
-fi
-
-if [[ "$1" == download ]]; then
-  exit 0
-fi
-
 pushd xuperindexer
 bin/xindexer &
 popd
