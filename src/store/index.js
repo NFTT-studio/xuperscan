@@ -8,7 +8,7 @@ localStorage.getItem('From-Value');
 export default new Vuex.Store({
   state: {
     local_url_list: [
-      { name: 'XuperChain', url: 'http://localhost:8088' },
+      { name: 'XuperChain', url: 'https://scanapi.guapfei.com' },
     ],
     add_local_url_list: [],
     baseURL_list_value:  window.localStorage.getItem("value_url")?JSON.parse(window.localStorage.getItem("value_url")):[{ name: '超级链', url: 'http://localhost:8088' }],
