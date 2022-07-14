@@ -4,10 +4,10 @@
       <div @click="getBackHome" class="log-img">
         <img src="../assets/image/logo.png" alt="" />
       </div>
-      <div class="log-tit" @click="showModal">
-        {{ valuetit }}
-        <a-icon type="down" />
-      </div>
+<!--      <div class="log-tit" @click="showModal">-->
+<!--        {{ valuetit }}-->
+<!--        <a-icon type="down" />-->
+<!--      </div>-->
     </div>
     <a-modal v-model="visibles" title="添加链" :width="800">
       <a-form-model
